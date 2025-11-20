@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.philesc.map_cache.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+      	"MapMixin",
+		"MapUpdateMixin",
+		"ItemFrameMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

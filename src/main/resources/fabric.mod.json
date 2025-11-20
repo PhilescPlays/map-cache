@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "map_cache",
+	"version": "${version}",
+	"name": "Map Cache",
+	"description": "A mod to add a client-side map cache to Minecraft",
+	"authors": [
+		"Philesc"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/client_maps/icon.png",
+	"environment": "Client",
+	"entrypoints": {
+		"client": [
+          "com.philesc.map_cache.ClientMaps"
+		]
+	},
+	"mixins": [
+		{
+			"config": "client_maps.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
